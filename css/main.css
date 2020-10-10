@@ -1,0 +1,319 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-bg-color: #ffffff;
+  --moz-decoration-color: #2f303a;
+  --animation-direction: #f5f4fa;
+  --footer-bg-color: rgba(255, 255, 255, 0.6);
+  --logo-color: #000000;
+  --сosial-color: #afb1b8;
+}
+
+body {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+}
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.img {
+  padding: 0px;
+  margin: 0px;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+.menu-nav {
+  display: flex;
+  align-items: center;
+}
+.site-nav {
+  display: inline-flex;
+}
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.menu-contact {
+  display: flex;
+  align-items: center;
+}
+.contact-list {
+  margin-left: auto;
+}
+.contacts-list .item:not(:last-child) {
+  margin-left: 50px;
+}
+.auth-nav {
+  display: flex;
+}
+.auth-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+/* Logo */
+.logo {
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.14;
+  text-decoration: none;
+}
+.logo-two {
+  margin-right: 93px;
+  color: var(--title-text-color);
+}
+.logo-free {
+  color: var(--primary-bg-color);
+}
+.site-nav .link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link {
+  position: relative;
+}
+.current::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 3px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+}
+
+button {
+  font-family: inherit;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.menu-nav .item {
+  display: flex;
+}
+.section-hero .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* site-nav навигация сайта */
+.container-menu {
+  margin-left: auto;
+}
+
+.container-contacts {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.auth-nav .link:hover,
+.auth-nav .link:focus,
+.footer-nav .link:hover,
+.footer-nav .link:focus {
+  color: var(--accent-color);
+}
+.auth-nav .link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 0.87;
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+/*оформление майла и телефона в хедере*/
+.link {
+  color: var(--primary-text-color);
+  text-decoration: none;
+  font-style: normal;
+}
+.item .item-feauter {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.footer-title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.footer-nav .link {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  font-style: normal;
+  text-decoration: none;
+}
+.footer-nav .adress {
+  color: var(--primary-bg-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  font-style: normal;
+}
+.footer-nav {
+  background-color: var(--moz-decoration-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-nav .adress-text {
+  margin-top: 0;
+  margin-bottom: 9px;
+  color: var(--primery-bg-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.footer-nav .link:not(:last-child) {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 9px;
+}
+.adress {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+.footer-nav .container .logo {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+/*Футер соц-сети*/
+.additional-title {
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--primary-bg-color);
+}
+.additional-item:not(:last-child) {
+  margin-right: 10px;
+}
+.basement-social {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--primary-bg-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+.additional {
+  margin-left: 70px;
+}
+.basement-social svg {
+  fill: currentColor;
+}
+.basement-social:hover {
+  background-color: var(--accent-color);
+}
+.basement-social:hover svg {
+  fill: var(--primary-bg-color);
+}
+/*Форма футера*/
+.footer-form {
+  display: flex;
+  align-items: center;
+}
+
+.footer-field .foot-decoration {
+  display: flex;
+  width: 360px;
+  height: 50px;
+  margin-right: 10px;
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  align-items: center;
+  background-color: transparent;
+}
+.footer-box {
+  display: block;
+  margin-left: 93px;
+}
+.footer-field ::placeholder {
+  font-size: 16px;
+  line-height: 20px;
+}
+.footer-telegram {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+  margin-left: 10px;
+}
+/* Кнопка внутри модального окна*/
+.footer-submit {
+  display: inline-flex;
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87px;
+  letter-spacing: 0.06em;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-bg-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
