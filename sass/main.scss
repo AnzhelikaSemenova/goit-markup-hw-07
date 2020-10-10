@@ -1,5 +1,6 @@
 @import "./utils/variables";
-
+@import "./base/fonts";
+@import "./components/logo";
 body {
   background-color: $primary-bg-color;
   color: $primary-text-color;
@@ -58,22 +59,6 @@ body {
   margin-right: 50px;
 }
 
-/* Logo */
-.logo {
-  color: $accent-color;
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.14;
-  text-decoration: none;
-}
-.logo-two {
-  margin-right: 93px;
-  color: $title-text-color;
-}
-.logo-free {
-  color: $primary-bg-color;
-}
 .site-nav .link {
   color: $title-text-color;
   font-weight: 500;
@@ -204,11 +189,7 @@ ul {
   display: flex;
   flex-direction: column;
 }
-.footer-nav .container .logo {
-  display: inline-block;
-  margin-top: 0;
-  margin-bottom: 20px;
-}
+
 /*Футер соц-сети*/
 .additional-title {
   margin-top: 0;
