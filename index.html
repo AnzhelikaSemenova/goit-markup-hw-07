@@ -12,8 +12,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
@@ -62,7 +61,7 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="button" data-modal-open>
+          <button type="button" class="button-hero" data-modal-open>
             Заказать услугу
           </button>
         </div>
@@ -305,7 +304,11 @@
                 <p class="feauter-title">UI Designer</p>
                 <ul class="team-icon list">
                   <li class="icon-item">
-                    <a href="https:" class="sicial-link" aria-label="инстаграм">
+                    <a
+                      href="https://www.instagram.com/accounts/login/"
+                      class="sicial-link"
+                      aria-label="инстаграм"
+                    >
                       <svg class="icon">
                         <use href="./images/symbol-defs.svg#instagram"></use>
                       </svg>
@@ -478,13 +481,7 @@
 
           <div class="form-field">
             <label for="email">Email</label>
-            <input
-              type="email"
-              name="email"
-              id=""
-              class="input"
-              autocomplete="none"
-            />
+            <input type="email" name="email" id="input" class="input" />
             <svg class="footer-info">
               <use href="./images/symbol-defs3.svg#message-2"></use>
             </svg>
@@ -509,9 +506,12 @@
                 id="checkbox"
               />
               <span>Соглашаюсь с рассылкой и принимаю</span>
-              <a href="http://" class="policy-text">Условия договора</a>
+              <a
+                href="https://get-element.3dn.ru/load/html_i_dhtml/prostye_html_zagotovki_dlja_stranic/7-1-0-32"
+                class="policy-text"
+                >Условия договора</a
+              >
             </label>
-
             <button type="submit" class="submit">Отправить</button>
           </div>
         </form>
